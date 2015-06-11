@@ -8,4 +8,5 @@ IP - the type of packet
 /ICMP() - ICMP packet is selected with default values from Scapy
 /"HelloWorld" - payload to include in the ICMP packet
 
-This basically sends a ICMP (used for error messages) to the router.
+This basically sends a ICMP (used for error messages) packet to the router.
+Putting "type=0" in the ICMP brackets sends a ping reply (others can be found at the end of the book)
