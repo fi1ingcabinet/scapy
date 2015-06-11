@@ -1,0 +1,11 @@
+>>>send(IP(dst="192.168.1.254")/ICMP()/"HelloWorld")
+.
+Sent 1 packets.
+
+send() - sends a SINGLE packet
+IP - the type of packet
+(dst="192.168.1.254") - the destination of the packet (router)
+/ICMP() - ICMP packet is selected with default values from Scapy
+/"HelloWorld" - payload to include in the ICMP packet
+
+This basically sends a ICMP (used for error messages) to the router.
